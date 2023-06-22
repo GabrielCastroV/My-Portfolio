@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   line-height: 1.6;
   background-color: #1d263b;
 }
@@ -176,7 +177,7 @@ nav ul li a:hover::after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-10px);
+    transform: translateY(-15px);
   }
 }
 
@@ -251,13 +252,17 @@ nav ul li a:hover::after {
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
+.copy{
+  text-align: start;
+  opacity: 0.5;
+}
 
 .project-link:hover {
   background-color: #fff;
   color: #1d263b;
 }
 #contact{
-  padding: 50px;
+  padding: 0px;
 }
 .contact-section {
   background-color: #1d263b;
@@ -266,7 +271,7 @@ nav ul li a:hover::after {
 
 .contact-section h2 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 .social-icons {
@@ -281,9 +286,11 @@ nav ul li a:hover::after {
 }
 
 .social-icons ul li {
-  margin: 40px;
+  margin: 20px 40px;
 }
-
+h2{
+  margin-top: 1.5rem;
+}
 .social-icons ul li a {
   color: #fff;
   text-decoration: none;
@@ -303,7 +310,13 @@ nav ul li a:hover::after {
   .about-content .image {
     max-width: 100%;
   }
-
+  .about-content{
+    padding: 0rem 4rem;
+    gap: 6rem;
+  }
+  .h2{
+    text-align: center;
+  }
   .skills-container {
     flex-direction: column;
   }
@@ -332,6 +345,19 @@ nav ul li a:hover::after {
 
   .about-content .description p {
     font-size: 16px;
+  }
+  .about-content{
+    padding: 0rem 2rem;
+    gap: 2rem;
+  }
+  nav{
+    width: 100vh;
+  }
+  #about, #skills, #projects, #contact{
+    width: 100vh;
+  }
+  .h2{
+    text-align: center;
   }
 
   .skills-section h2 {
@@ -368,5 +394,14 @@ nav ul li a:hover::after {
 
   .social-icons ul li a {
     font-size: 20px;
+  }
+  .skills-container{
+    margin-top: 5rem;
+  }
+}
+@media(max-width: 1024px){
+  .about-content{
+    padding: 0rem 4rem;
+    gap: 2rem;
   }
 }

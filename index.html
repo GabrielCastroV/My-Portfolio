@@ -2,10 +2,14 @@
 <html lang="es">
 
 <head>
+<link rel="icon" href="img/icon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Portafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +26,7 @@
     <div class="container">
       <div class="about-content">
         <div class="description">
-          <h2>Hi there, I'm Gabriel &#128075</h2>
+          <h2 class="h2">Hi there, I'm Gabriel <span class="emote">&#128075</span></h2>
           <p>I am a full stack web developer who is passionate about my work and constantly looking for new knowledge. My main goal is to help improve and fix code related issues. With a strong understanding of current web technologies, I have the ability to work on both the front-end and back-end sides of an application.</p>
         </div>
         <div class="image">
@@ -75,7 +79,7 @@
       <h2>My Projects</h2>
       <div class="projects-container">
         <div class="project">
-          <a href="#">
+          <a href="https://gabrielcastrov.github.io/lista-de-tareas/" target="_blank">
             <div class="project-image">
               <img src="img/proyecto1.png" alt="Imagen del Proyecto 1" width="300px" height=200px>
             </div>
@@ -86,7 +90,7 @@
           </a>
         </div>
         <div class="project">
-          <a href="#">
+          <a href="https://gabrielcastrov.github.io/contact-list/" target="_blank">
             <div class="project-image">
               <img src="img/proyecto2.png" alt="Imagen del Proyecto 2"width="300px" height="220px">
             </div>
@@ -97,7 +101,7 @@
           </a>
         </div>
         <div class="project">
-          <a href="#">
+          <a href="https://gabrielcastrov.github.io/crypto-prices/" target="_blank">
             <div class="project-image">
               <img src="img/proyecto3.png" alt="Imagen del Proyecto 3" width="300px" height="220px">
             </div>
@@ -116,12 +120,13 @@
       <h2>Contact me</h2>
       <div class="social-icons">
         <ul>
-          <li><a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin_logo.png" alt="LinkedIn" width="50px" height="auto"></a></li>
-          <li><a href="https://github.com/GabrielCastroV" target="_blank"><img src="img/github_logo.png" alt="GitHub" width="50px" height="auto"></a></li>
-          <li><a href="#"><img src="img/gmail_logo.png" alt="Gmail" width="60px" height="45px"></a></li>
+          <li><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="img/linkedin_logo.png" alt="LinkedIn" width="50px" height="auto"></a></li>
+          <li><a href="https://github.com/GabrielCastroV" target="_blank" title="Github"><img src="img/github_logo.png" alt="GitHub" width="50px" height="auto"></a></li>
+          <li><a href="mailto:gabrielenriquecas@gmail.com" target="_blank" title="Gmail"><img src="img/gmail_logo.png" alt="Gmail" width="60px" height="45px"></a></li>
         </ul>
       </div>
     </div>
+    <p class="copy">© 2023 Castro Company. All rights reserved. </p>
   </section>
 
   <script src="script.js"></script>
