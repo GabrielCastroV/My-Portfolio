@@ -1,14 +1,21 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
 }
-
+*{
+  margin: 0;
+}
 body {
   font-family: 'Inter', sans-serif;
   font-family: 'Lato', sans-serif;
   line-height: 1.6;
   background-color: #1d263b;
+}
+.undraw{
+  padding: 0 2rem;
 }
 
 nav {
@@ -23,17 +30,17 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
   list-style-type: none;
-  padding: 20px;
+  padding: 14px 0;
 }
 
 nav ul li {
-  margin-right: 20px;
+  margin-right: 15px;
 }
 
 nav ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 11px;
   position: relative;
   transition: color 0.3s ease;
 }
@@ -59,35 +66,35 @@ nav ul li a:hover::after {
 }
 
 .section {
-  padding: 120px 0;
+  padding: 2rem 0rem;
   text-align: center;
 }
 
 .about-section {
   background-color: #1d263b;
-  color: #fff;
+  color: #f2f2f2;
 }
 
 .about-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 8rem;
+  flex-direction: column;
 }
 
 .about-content .description {
   flex: 1;
-  max-width: 50%;
+  max-width: 80%;
   text-align: left;
 }
 
 .about-content .description h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
+  font-size: 29px;
 }
 
 .about-content .description p {
-  font-size: 18px;
+  font-size: 16px;
+  margin-bottom: 2rem;
 }
 
 .about-content .image img {
@@ -182,7 +189,7 @@ nav ul li a:hover::after {
 }
 
 .projects-section {
-  background-color: #f1f1f1;
+  background-color: #f2f2f2;
 }
 
 .projects-section h2 {
@@ -255,6 +262,7 @@ nav ul li a:hover::after {
 .copy{
   text-align: start;
   opacity: 0.5;
+  font-size: 10px;
 }
 
 .project-link:hover {
@@ -285,123 +293,87 @@ nav ul li a:hover::after {
   display: flex;
 }
 
-.social-icons ul li {
-  margin: 20px 40px;
-}
-h2{
-  margin-top: 1.5rem;
+.h2{
+  text-align: center;
+  margin: 1rem 0rem;
 }
 .social-icons ul li a {
   color: #fff;
   text-decoration: none;
   transition: opacity 0.3s ease;
 }
+.red{
+  width: 2rem;
+  height: 2rem;
+}
+.redes{
+  gap: 3rem;
+  margin: 0;
+  padding: 0;
+}
+.gmail{
+  width: 2.5rem;
+}
 
 .social-icons ul li a:hover {
   opacity: 0.7;
 }
-
-@media (max-width: 768px) {
-  .about-content {
-    flex-direction: column;
-  }
-
-  .about-content .description,
-  .about-content .image {
-    max-width: 100%;
-  }
-  .about-content{
-    padding: 0rem 4rem;
-    gap: 6rem;
-  }
-  .h2{
-    text-align: center;
-  }
-  .skills-container {
-    flex-direction: column;
-  }
-
-  .skill {
-    margin: 10px;
-  }
-
-  .project {
-    width: 100%;
-  }
-
-  .project-image {
-    height: 150px;
-  }
+h3{
+  color: #f2f2f2;
+  margin: 1rem 0rem;
 }
 
-@media (max-width: 480px) {
-  nav ul li a {
+@media(min-width: 768px){
+  nav ul{
+    padding: 20px;
+  }
+  nav ul li a{
     font-size: 16px;
   }
-
-  .about-content .description h2 {
-    font-size: 28px;
+  .section{
+    padding: 8rem 0rem;
+  }
+  nav ul li {
+    margin-right: 20px;
+  }
+}
+@media(min-width: 1024px){
+  nav ul{
+    padding: 22px;
+  }
+  nav ul li a{
+    font-size: 18px;
+  }
+  .about-content{
+    flex-direction: row;
+  }
+  .description{
+    padding: 0rem 6rem;
+  }
+  .description p{
+    font-size: 2px;
+  }
+  .undraw{
+    margin: 4rem 4rem 4rem 0rem;
   }
 
+}
+@media(min-width: 1440px){
+  .description{
+    padding: 0rem 10rem 0 10rem;
+  }
+  .h2{
+    margin-bottom: 2rem;
+  }
+  .undraw{
+    padding: 0;
+    margin: 0 10rem 0 4rem;
+  }
   .about-content .description p {
-    font-size: 16px;
-  }
-  .about-content{
-    padding: 0rem 2rem;
-    gap: 2rem;
-  }
-  nav{
-    width: 100vh;
-  }
-  #about, #skills, #projects, #contact{
-    width: 100vh;
-  }
-  .h2{
-    text-align: center;
-  }
-
-  .skills-section h2 {
-    font-size: 24px;
-  }
-
-  .logo-container {
-    width: 80px;
-    height: 80px;
-  }
-
-  .logo {
-    width: 40px;
-    height: 40px;
-  }
-
-  .logo.tailwind {
-    width: 60px;
-    height: 60px;
-  }
-
-  .project h3 {
     font-size: 20px;
+    margin-bottom: 2rem;
   }
-
-  .project-link {
-    padding: 8px 16px;
-    font-size: 14px;
-  }
-
-  .contact-section h2 {
-    font-size: 24px;
-  }
-
-  .social-icons ul li a {
-    font-size: 20px;
-  }
-  .skills-container{
-    margin-top: 5rem;
-  }
-}
-@media(max-width: 1024px){
-  .about-content{
-    padding: 0rem 4rem;
-    gap: 2rem;
+  .section{
+    padding: 11rem 0rem;
   }
 }
