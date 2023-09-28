@@ -13,13 +13,12 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   background-color: #a22112;
 }
 
 /* Nav bar */
 #nav-bar {
-  background-color: #11343556;
+  background-color: #00000053;
   position: fixed;
   top: 0;
   left: 0;
@@ -41,13 +40,13 @@ body {
   width: 2.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  color: white;
+  color: #f1fcf9;
   cursor: pointer;
 }
 
 .mobile:hover {
   background-color: #484b4e56;
-  color: black;
+  color: #082b2a;
 }
 
 nav ul {
@@ -82,7 +81,7 @@ nav ul li a::after {
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: #1d263b;
+  background-color: #3cc3b3;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
@@ -91,6 +90,16 @@ nav ul li a:hover::after {
   transform: scaleX(1);
 }
 
+/* Seccion principal */
+
+#about {
+  padding: 4rem 0 0 0;
+  height: calc(100vh + 4rem);
+}
+.programmer {
+  width: 70%;
+  height: auto;
+}
 .section {
   padding: 2rem 0rem;
   text-align: center;
@@ -98,24 +107,22 @@ nav ul li a:hover::after {
   display: flex;
   align-items: center;
 }
-#about {
-  padding-top: 4rem;
 
-}
 .about-section {
-  background: rgb(70,195,193);
-  background: linear-gradient(45deg, rgba(70,195,193,1) 0%, rgba(35,196,145,1) 100%);
+  background-color: #f1fcf9;
   color: #020202;
 }
 
 .my-name {
-  color: white;
+  background: linear-gradient(45deg, rgba(70,195,193,1) 0%, rgba(35,196,145,1) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 .container {
   max-width: 80rem;
   margin: auto;
-
 }
 
 .about-content {
@@ -127,30 +134,32 @@ nav ul li a:hover::after {
 
 .about-content .description {
   flex: 1;
-  max-width: 80%;
+  max-width: 90%;
   text-align: left;
+  color: #082b2a;
 }
 
 .about-content .description h2 {
-  font-size: 3rem;
+  margin: auto;
+  font-size: 35px;
+  color: #082b2a;
+  margin-bottom: 2rem;
 }
 
 .about-content .description p {
   font-size: 16px;
+  font-weight: 500;
   margin-bottom: 2rem;
+  color: #082b2a;
 }
 
-.about-content .image img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 5px;
-}
 
 .skills-section {
-  background-color: #fff;
+  background: linear-gradient(45deg, rgba(70,195,193,1) 0%, rgba(35,196,145,1) 100%);
 }
 
 .skills-section h2 {
+  color: #f1fcf9;
   font-size: 28px;
   margin-bottom: 20px;
 }
@@ -171,7 +180,8 @@ nav ul li a:hover::after {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #eaf1fb;
+  background-color: #d1f6ee;
+  box-shadow: ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -365,6 +375,14 @@ h3{
   color: #f2f2f2;
   margin: 1rem 0rem;
 }
+@media (min-width: 570px) {
+  .programmer {
+    width: 60%;
+  }
+  .container .description {
+    width: 70%;
+  }
+}
 
 @media(min-width: 768px){
   .mobile {
@@ -383,6 +401,13 @@ h3{
   nav ul li {
     margin-right: 20px;
   }
+  .programmer {
+    width: 50%;
+  }
+  .about-content .description h2 {
+    font-size: 43px;
+  }
+
 }
 @media(min-width: 1024px){
   nav ul{
@@ -394,15 +419,19 @@ h3{
   .about-content{
     flex-direction: row;
   }
+  .container .about-content h2 {
+    margin-bottom: 3rem;
+  }
   .description{
     padding: 0rem 6rem;
   }
   .description p{
     font-size: 2px;
   }
-  .undraw{
-    margin: 4rem 4rem 4rem 0rem;
+  .programmer {
+    width: 30rem;
   }
+
 
 }
 @media(min-width: 1440px){
@@ -412,15 +441,14 @@ h3{
   .h2{
     margin-bottom: 2rem;
   }
-  .undraw{
-    padding: 0;
-    margin: 0 10rem 0 4rem;
-  }
   .about-content .description p {
     font-size: 20px;
     margin-bottom: 2rem;
   }
   .section{
     padding: 11rem 0rem;
+  }
+  .programmer {
+    height: 24rem;
   }
 }
