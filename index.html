@@ -15,120 +15,131 @@
 <body>
   <nav id="nav-bar">
     <div id="mini-nav">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="mobile">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburguer">
         <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
       </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x-button">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+      
       <ul>
         <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills and Tools</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills and Tools</a></li>
         <li><a href="#contact">Contact me</a></li>
       </ul>
     </div>
   </nav>
+  <main id="main-container">
+    <div class="panel hidden">
+      <a href="" class="panel-btn">About me</a>
+      <a href="" class="panel-btn">Projects</a>
+      <a href="" class="panel-btn">Skills and Tools</a>
+      <a href="" class="panel-btn">Contact me</a>
+    </div>
 
-  <section id="about" class="section about-section">
-    <div class="container">
-      <div class="about-content">
-        <div class="description">
-          <h2 class="h2">Hi there, I'm <span class="my-name">Gabriel</span></h2>
-          <p>I am a full stack web developer who is passionate about my work and constantly looking for new knowledge. My main goal is to help improve and fix code related issues. With a strong understanding of current web technologies, I have the ability to work on both the front-end and back-end sides of an application.</p>
-        </div>
-        <div class="image">
-          <img src="img/coding.png" class="programmer">
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="description">
+            <h2 class="h2">Hi there, I'm <span class="my-name">Gabriel</span></h2>
+            <p>I am a full stack web developer who is passionate about my work and constantly looking for new knowledge. My main goal is to help improve and fix code related issues. With a strong understanding of current web technologies, I have the ability to work on both the front-end and back-end sides of an application.</p>
+          </div>
+          <div class="image">
+            <img src="img/coding.png" class="programmer">
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2>Skills and Tools</h2>
-      <div class="skills-container">
-        <div class="skill">
-          <div class="logo-container">
-            <div class="logo html"></div>
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>Skills and Tools</h2>
+        <div class="skills-container">
+          <div class="skill">
+            <div class="logo-container">
+              <div class="logo html"></div>
+            </div>
+            <p>HTML</p>
           </div>
-          <p>HTML</p>
-        </div>
-        <div class="skill">
-          <div class="logo-container">
-            <div class="logo js"></div>
+          <div class="skill">
+            <div class="logo-container">
+              <div class="logo js"></div>
+            </div>
+            <p>JavaScript</p>
           </div>
-          <p>JavaScript</p>
-        </div>
-        <div class="skill">
-          <div class="logo-container">
-            <div class="logo css"></div>
+          <div class="skill">
+            <div class="logo-container">
+              <div class="logo css"></div>
+            </div>
+            <p>CSS</p>
           </div>
-          <p>CSS</p>
-        </div>
-        <div class="skill">
-          <div class="logo-container">
-            <div class="logo python"></div>
+          <div class="skill">
+            <div class="logo-container">
+              <div class="logo python"></div>
+            </div>
+            <p>Python</p>
           </div>
-          <p>Python</p>
-        </div>
-        <div class="skill">
-          <div class="logo-container">
-            <div class="logo tailwind"></div>
+          <div class="skill">
+            <div class="logo-container">
+              <div class="logo tailwind"></div>
+            </div>
+            <p>Tailwind CSS</p>
           </div>
-          <p>Tailwind CSS</p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- <section id="projects" class="section projects-section">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="projects-container">
-        <div class="project">
-          <a href="https://gabrielcastrov.github.io/lista-de-tareas/" target="_blank">
-            <div class="project-image">
-              <img src="img/proyecto1.png" alt="Imagen del Proyecto 1" width="100px" height="auto">
-            </div>
-            <div class="project-overlay">
-              <h3>TODOAPP</h3>
-              <a href="https://gabrielcastrov.github.io/lista-de-tareas/" target="_blank" class="project-link">Check it out!</a>
-            </div>
-          </a>
-        </div>
-        <div class="project">
-          <a href="https://gabrielcastrov.github.io/contact-list/" target="_blank">
-            <div class="project-image">
-              <img src="img/proyecto2.png" alt="Imagen del Proyecto 2"width="100px" height="auto">
-            </div>
-            <div class="project-overlay">
-              <h3>LISTA DE CONTACTOS</h3>
-              <a href="https://gabrielcastrov.github.io/contact-list/" target="_blank" class="project-link" >Check it out!</a>
-            </div>
-          </a>
-        </div>
-        <div class="project">
-          <a href="https://gabrielcastrov.github.io/crypto-prices/" target="_blank">
-            <div class="project-image">
-            </div>
-          </a>
+    <!-- <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+          <div class="project">
+            <a href="https://gabrielcastrov.github.io/lista-de-tareas/" target="_blank">
+              <div class="project-image">
+                <img src="img/proyecto1.png" alt="Imagen del Proyecto 1" width="100px" height="auto">
+              </div>
+              <div class="project-overlay">
+                <h3>TODOAPP</h3>
+                <a href="https://gabrielcastrov.github.io/lista-de-tareas/" target="_blank" class="project-link">Check it out!</a>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://gabrielcastrov.github.io/contact-list/" target="_blank">
+              <div class="project-image">
+                <img src="img/proyecto2.png" alt="Imagen del Proyecto 2"width="100px" height="auto">
+              </div>
+              <div class="project-overlay">
+                <h3>LISTA DE CONTACTOS</h3>
+                <a href="https://gabrielcastrov.github.io/contact-list/" target="_blank" class="project-link" >Check it out!</a>
+              </div>
+            </a>
+          </div>
+          <div class="project">
+            <a href="https://gabrielcastrov.github.io/crypto-prices/" target="_blank">
+              <div class="project-image">
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section> -->
+    </section> -->
 
-  <!-- <footer id="contact" class="footer contact-section">
-    <div class="container">
-      <h3 class="h3">Contact me</h3>
-      <div class="social-icons">
-        <ul class="redes">
-          <li><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="img/linkedin_logo.png" alt="LinkedIn" class="red"></a></li>
-          <li><a href="https://github.com/GabrielCastroV" target="_blank" title="Github"><img src="img/github_logo.png" alt="GitHub" class="red"></a></li>
-          <li><a href="mailto:gabrielenriquecas@gmail.com" target="_blank" title="Gmail"><img src="img/gmail_logo.png" alt="Gmail" class="red gmail"></a></li>
-        </ul>
+    <!-- <footer id="contact" class="footer contact-section">
+      <div class="container">
+        <h3 class="h3">Contact me</h3>
+        <div class="social-icons">
+          <ul class="redes">
+            <li><a href="https://www.linkedin.com/" target="_blank" title="LinkedIn"><img src="img/linkedin_logo.png" alt="LinkedIn" class="red"></a></li>
+            <li><a href="https://github.com/GabrielCastroV" target="_blank" title="Github"><img src="img/github_logo.png" alt="GitHub" class="red"></a></li>
+            <li><a href="mailto:gabrielenriquecas@gmail.com" target="_blank" title="Gmail"><img src="img/gmail_logo.png" alt="Gmail" class="red gmail"></a></li>
+          </ul>
+        </div>
+        <p class="copy">© 2023 Castro Company. All rights reserved. </p>
       </div>
-      <p class="copy">© 2023 Castro Company. All rights reserved. </p>
-    </div>
-  </footer> -->
-
+    </footer> -->
+  </main>
   <script src="script.js"></script>
 </body>
 
