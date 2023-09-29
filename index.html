@@ -15,12 +15,12 @@
 <body>
   <nav id="nav-bar">
     <div id="mini-nav">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburguer">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="x-button">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-      </svg>
+      <div class="hamburguer">
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+      </div>
+
       
       <ul>
         <li><a href="#about">About me</a></li>
@@ -32,10 +32,10 @@
   </nav>
   <main id="main-container">
     <div class="panel hidden">
-      <a href="" class="panel-btn">About me</a>
-      <a href="" class="panel-btn">Projects</a>
-      <a href="" class="panel-btn">Skills and Tools</a>
-      <a href="" class="panel-btn">Contact me</a>
+      <a href="#about" class="panel-btn">About me</a>
+      <a href="#projects" class="panel-btn">Projects</a>
+      <a href="#skills" class="panel-btn">Skills and Tools</a>
+      <a href="#contact" class="panel-btn">Contact me</a>
     </div>
 
     <section id="about" class="section about-section">
