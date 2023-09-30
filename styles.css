@@ -331,8 +331,9 @@ nav ul li a:hover::after {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  gap: 2rem;
 }
 
 #projects .container h2 {
@@ -353,14 +354,23 @@ nav ul li a:hover::after {
 .desc-container {
   display: flex;
   flex-direction: column;
+  height: 100%;
+  padding: 1rem;
+}
 
+.desc-container h3 {
+  color: #082b2a;
 }
 
 .img-project {
-  width: 35%;
+  width: 75%;
 }
 
-.project-info a {
+.desc-btn {
+  padding: 1rem;
+}
+
+.desc-btn a {
   background-color: aliceblue;
   padding: 0.3rem;
   border-radius: 0.3rem;
