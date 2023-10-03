@@ -336,9 +336,6 @@ nav ul li a:hover::after {
   gap: 2rem;
 }
 
-#projects .container h2 {
-  border: 2px solid black;
-}
 
 .project {
   width: 90%;
@@ -349,6 +346,8 @@ nav ul li a:hover::after {
   justify-content: center;
   gap: 1rem;
   align-items: center;
+  border-radius: 0.5rem;
+  background-color: #082b2a;
 }
 
 .desc-container {
@@ -356,6 +355,7 @@ nav ul li a:hover::after {
   flex-direction: column;
   height: 100%;
   padding: 1rem;
+  background-color: rgba(237, 32, 32, 0.514);
 }
 
 .desc-container h3 {
