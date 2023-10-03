@@ -322,7 +322,13 @@ nav ul li a:hover::after {
 #projects {
   background: linear-gradient(45deg, rgba(70,195,193,1) 0%, rgba(35,196,145,1) 100%);
   height: auto;
-  color: #082b2a;
+  color: #f1fcf9;
+  display: flex;
+  flex-direction: column;
+}
+
+#projects h2 {
+  margin-bottom: 2rem;
 }
 
 #projects .container {
@@ -350,10 +356,17 @@ nav ul li a:hover::after {
   -webkit-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   -moz-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
+  transition: 1s all ease;
 }
+
+/* .project:hover {
+  filter: grayscale(1);
+  transition: 1s all ease;
+} */
 
 .project .desc-container p {
   padding-bottom: 1rem;
+  color: #082b2a;
 }
 
 .desc-container {
@@ -377,6 +390,12 @@ nav ul li a:hover::after {
 
 .desc-btn {
   padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  width: 80%;
 }
 
 .desc-btn a {
@@ -488,6 +507,9 @@ h3{
   }
   .about-content .description h2 {
     font-size: 43px;
+  }
+  #projects .container {
+    flex-direction: row;
   }
 
 }
