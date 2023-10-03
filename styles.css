@@ -350,7 +350,10 @@ nav ul li a:hover::after {
   -webkit-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   -moz-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
-  padding-bottom: 0;
+}
+
+.project .desc-container p {
+  padding-bottom: 1rem;
 }
 
 .desc-container {
@@ -363,10 +366,13 @@ nav ul li a:hover::after {
 .desc-container h3 {
   color: #082b2a;
 }
-
+.img-container {
+  background-color: transparent;
+}
 .img-project {
   width: 100%;
   border-radius: 0.5rem;
+  height: 100%;
 }
 
 .desc-btn {
