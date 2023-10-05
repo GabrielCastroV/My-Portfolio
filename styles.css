@@ -231,92 +231,6 @@ nav ul li a:hover::after {
 }
 
 
-.skills-section {
-  background: linear-gradient(45deg, rgba(70,195,193,1) 0%, rgba(35,196,145,1) 100%);
-}
-
-.skills-section h2 {
-  color: #f1fcf9;
-  font-size: 28px;
-  margin-bottom: 20px;
-}
-
-.skills-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.skill {
-  margin: 20px;
-}
-
-.logo-container {
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: #d1f6ee;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: float 4s infinite ease-in-out;
-}
-
-.logo {
-  width: 60px;
-  height: 60px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.logo.html {
-  background-image: url("img/html_logo.png");
-  width: 80px;
-  height: 80px;
-  animation: float 6s infinite ease-in-out;
-}
-
-.logo.js {
-  background-image: url("img/js_logo.png");
-  width: 70px;
-  height: 70px;
-  animation: float 7s infinite ease-in-out;
-}
-
-.logo.css {
-  background-image: url("img/css_logo.png");
-  width: 80px;
-  height: 80px;
-  animation: float 8s infinite ease-in-out;
-}
-
-.logo.python {
-  background-image: url("img/python_logo.png");
-  width: 75px;
-  height: 75px;
-  animation: float 7s infinite ease-in-out;
-}
-
-.logo.tailwind {
-  background-image: url("img/tailwind_logo.png");
-  width: 80px;
-  height: 80px;
-  animation: float 6s infinite ease-in-out;
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
 /* Projects */
 
 #projects {
@@ -341,7 +255,6 @@ nav ul li a:hover::after {
   gap: 2rem;
 }
 
-
 .project {
   width: 90%;
   height: auto;
@@ -354,13 +267,9 @@ nav ul li a:hover::after {
   -webkit-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   -moz-box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
   box-shadow: -22px 23px 55px -18px rgba(8,43,42,0.72);
-  transition: 1s all ease;
 }
 
-/* .project:hover {
-  filter: grayscale(1);
-  transition: 1s all ease;
-} */
+
 
 .project .desc-container p {
   color: #082b2a;
@@ -507,6 +416,12 @@ h3{
     flex-direction: row;
     width: 95%;
     gap: 1rem;
+  }
+
+  #projects .container:hover .project:not(:hover) {
+    filter: grayscale(1);
+    transition: 4s all ease;
+    /* filter: blur(2px); */
   }
 
 }
