@@ -15,7 +15,7 @@ hamburguer.addEventListener('click', e => {
     if (!hamburguer.classList.contains('active')) {
         hamburguer.classList.add('active');
         panelMobile.classList.remove('hidden');
-        miniNavBar.style.backgroundColor = '#5ed0b7ea'
+        miniNavBar.style.backgroundColor = '#6bddca'
     } else {
         hamburguer.classList.remove('active');
         panelMobile.classList.add('hidden');
