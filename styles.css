@@ -333,6 +333,9 @@ nav ul li a:hover::after {
   border: 1px solid #196c66;
 }
 
+.work {
+  font-weight: 300;
+}
 /* Skills and Tools section  */
 
 #skills {
